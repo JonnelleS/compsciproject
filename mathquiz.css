@@ -3,6 +3,7 @@ h1 {
 }
 body {
     background-color: white;
+    text-align: center;
 }
 #Run {
     float: left;
