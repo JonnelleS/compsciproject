@@ -14,3 +14,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 my-tag{
     font-style: italic;
 }
+
+p {
+   font-size: 23px; 
+}
