@@ -72,6 +72,15 @@ Other important grammatical rules are:<br>
 </p>
     </div>
     <div class="w3-third w3-container">
+    <h3>Here's a Mad Lib</h3>
+    Please type a name <input id="name"> <br> 
+    <br>
+    Please type an adjective: <input id="adjective"> <br><br>
+    Please type a day of the week: <input id="day"> <br>
+    <br>
+    Please type a verb: <input id="verb"> <br>
+    <button id="submit"> Submit </button>
+    <p> </p>
     </div>
         <div class="w3-third w3-container">
 <div id="img2" > <img src="http://clipart-library.com/img1/106923.jpg" alt=""> </div>
@@ -104,10 +113,8 @@ Other important grammatical rules are:<br>
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
-
 // Get the DIV with overlay effect
 var overlayBg = document.getElementById("myOverlay");
-
 // Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {
   if (mySidebar.style.display === 'block') {
@@ -118,7 +125,6 @@ function w3_open() {
     overlayBg.style.display = "block";
   }
 }
-
 // Close the sidebar with the close button
 function w3_close() {
   mySidebar.style.display = "none";
@@ -128,3 +134,4 @@ function w3_close() {
 
 </body>
 </html>
+
