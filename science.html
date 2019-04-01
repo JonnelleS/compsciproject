@@ -1,26 +1,123 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
- <link rel="stylesheet" type="text/css" href="science.css">    
-    </head>
-   <body>
-  <h1>Science 101</h1>
-  <div id="introduction">
-    <h2>The Solar System</h2>
-    <h3>Planets</h3>
-    <h3>Solar System Quiz</h3>
+<html lang="en">
+<head>
+<title>Learn For Your Future</title>
+ <link rel="stylesheet" type="text/css" href="home.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a href="http://javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" onclick="w3_open()"></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Welcome</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Math</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Science</a>
+     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Reading</a>
   </div>
-  <div id="KeyElements">
-    <h2>Plant Life</h2>
-    <h3>How Photosynthesis Works</h3>
-    <h3>Identifying Plant Types Quiz</h3>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="http://javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+  </a>
+  <h4 class="w3-bar-item"><strong>Menu</strong></h4>
+  <a class="w3-bar-item w3-button w3-hover-orange" href="https://jonnelles.github.io/compsciproject/mathquiz.html" target="blank">Test your math skills here!</a>
+  <a class="w3-bar-item w3-button w3-hover-green" href="#">Science Tests</a>
+  <a class="w3-bar-item w3-button w3-hover-purple" href="#">Reading Adlibs Game</a>
+  <a class="w3-bar-item w3-button w3-hover-red" href="https://www.abcya.com/grades/k" target="blank">More Fun Games</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-blue"> Solar System</h1>
+      <p>Learn For Your Future is a website created for children to gain more education while staying entertained with games and quizzes to test their skills. </p>
+    </div>
+    <div class="w3-third w3-container">
+      <div id="v1" > <img src="https://cdn.shopify.com/s/files/1/1660/9891/products/M17072302_large.jpg?v=1500802959" alt="">
+       </div>
+    </div>
   </div>
-  <div id= "media">
-    <h2>The Human Body</h2>
-    <h3>How the Human Body Works</h3>
-    <h3>Identifying Body Parts Quiz</h3>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-blue">Plant Life</h1>
+      <p>This website contains games and lessons on subjects such as math, science, and reading. Test your skills and learn new rules and tricks to improve your education. </p>
+      </div>
+    <div class="w3-third w3-container">
+<div id="img2" > <img src="https://tedconfblog.files.wordpress.com/2012/08/back-to-school.jpg" alt=""> </div>
+    </div>
   </div>
-  <a href="https://jonnelles.github.io/compsciproject/sciencequiz.html"> Quiz </a>
+  
+  
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-blue">Human Body</h1>
+      <p>This website contains games and lessons on subjects such as math, science, and reading. Test your skills and learn new rules and tricks to improve your education. </p>
+      </div>
+    <div class="w3-third w3-container">
+<div id="img" > <img src="https://tedconfblog.files.wordpress.com/2012/08/back-to-school.jpg" alt=""> </div>
+    </div>
+  </div>
+  
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-pink" href="https://jonnelles.github.io/compsciproject/home.html">1</a>
+      <a class="w3-button w3-hover-pink" href="https://jonnelles.github.io/compsciproject/math.html">2</a>
+      <a class="w3-button w3-pink" href="https://jonnelles.github.io/compsciproject/science.html">3</a>
+      <a class="w3-button w3-hover-pink" href="https://jonnelles.github.io/compsciproject/reading.html">4</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Thank you for visiting this website!</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
 </body>
 </html>
