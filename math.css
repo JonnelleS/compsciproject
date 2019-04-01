@@ -1,4 +1,19 @@
+.w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1{
+    font-style: italic;
+}
 
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+my-tag{
+    font-style: italic;
+}
 
 p {
   font-size: 18px;
